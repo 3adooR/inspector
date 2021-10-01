@@ -30,6 +30,7 @@
 # Используемые технологии
 * **Docker** (https://www.docker.com/products/docker-desktop)
 * **Laravel** (https://laravel.com/)
+* **Redis** (https://redis.io/)
 
 # Структура БД
 
