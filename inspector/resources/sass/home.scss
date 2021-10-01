@@ -1,0 +1,50 @@
+@import 'app.scss';
+
+#home {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 100px;
+    height: 100%;
+
+    h1, footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 8em;
+        font-weight: bold;
+        text-shadow: 0 0 4em #fff;
+        padding-bottom: 2em;
+    }
+
+    footer input {
+        padding: 0.2em 0.5em;
+        border: 0;
+        font-size: 1.5em;
+        text-align: center;
+        outline: none;
+    }
+
+    #access {
+        background: #fff;
+        padding: 2em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        box-shadow: 0 0 1em #000;
+        text-align: center;
+
+        .logout {
+            display: block;
+            margin-top: 1em;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #home h1 {
+        font-size: 3em;
+    }
+}

@@ -1,0 +1,133 @@
+@import 'app.scss';
+
+body {
+    background: #fff;
+}
+
+#sidebar {
+    width: 280px;
+    height: 100%;
+    background: #101010;
+    box-shadow: 0 0 4em #ccc;
+
+    h1, h2 {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+
+    a {
+        color: #666;
+    }
+
+    a:hover, a.active {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &-footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding-bottom: 1em;
+        width: 280px;
+        text-align: center;
+
+        .lang {
+            display: flex;
+            width: 50px;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+    }
+}
+
+#menu-bars {
+    display: none;
+}
+
+#menu {
+    margin-top: 1em;
+
+    button {
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .btn-toggle-nav li a {
+        display: block;
+        background: #fff;
+        padding: 0.5em 1em;
+        margin: 0.5em 0;
+        color: #101010;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .btn-toggle-nav li a:hover {
+        background: #ccc;
+        text-decoration: none;
+    }
+
+    .btn-toggle-nav li a.active {
+        background: #000;
+        color: #fff;
+        box-shadow: 0 0 0.5em #666;
+    }
+
+    .btn-toggle-nav li i {
+        width: 1em;
+        margin-right: 0.5em;
+    }
+}
+
+section {
+    color: #101010;
+    padding: 1.5em 2em 1.5em 300px;
+
+    .menu-name {
+        font-size: 2em;
+        text-transform: uppercase;
+        padding-bottom: 0.5em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #sidebar {
+        height: 5em;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    #sidebar.active {
+        height: 100%;
+    }
+
+    section {
+        padding: 6em 1em 1em 1em;
+    }
+
+    #menu-header {
+        display: flex;
+    }
+
+    #menu-bars {
+        display: block;
+        width: 0.5em;
+        font-size: 2.8em;
+        margin-right: 0.8em;
+        cursor: pointer;
+    }
+
+    .menu-name {
+        text-align: center;
+    }
+}

@@ -1,0 +1,1 @@
+cd laradock && winpty docker-compose exec workspace bash;
